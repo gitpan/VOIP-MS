@@ -1,0 +1,34 @@
+VOIP-MS version 0.01
+====================
+
+This module provides a Perlish way to communicate with the SOAP API at voip.ms.
+
+It presently implements only getBalance and getCDR.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  Moose
+  MooseX::Params::Validate;
+  SOAP::Lite;
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2010 by Roy Hooper
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.9 or,
+at your option, any later version of Perl 5 you may have available.
+
+

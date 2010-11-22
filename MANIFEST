@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/VOIP-MS.t
+lib/VOIP/MS.pm
+META.yml                                 Module meta-data (added by MakeMaker)
