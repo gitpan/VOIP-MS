@@ -1,21 +1,25 @@
---- #YAML:1.0
-name:               VOIP-MS
-version:            0.01
-abstract:           Perl module to provide access to the voip.ms API
+---
+abstract: 'Perl module to provide access to the voip.ms API'
 author:
-    - Roy Hooper <rhooper@local>
-license:            unknown
-distribution_type:  module
+  - 'Roy Hooper, E<lt>L<rhooper@toybox.ca><gt>'
 configure_requires:
-    ExtUtils::MakeMaker:  0
-build_requires:
-    ExtUtils::MakeMaker:  0
-requires:  {}
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
+license: perl
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: VOIP-MS
+provides:
+  VOIP::MS:
+    file: lib/VOIP/MS.pm
+    version: 0.02
+requires:
+  Carp: 0
+  Moose: 1.15
+  MooseX::Params::Validate: 0.14
+  SOAP::Lite: 0.710
+  perl: v5.8.8
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.02
